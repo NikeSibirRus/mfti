@@ -1,5 +1,20 @@
 .custom {
     color:#007bff;
     background-color: #FFA500;
-    font-size:10px;
+    font-size:20px;
+}
+
+.body {
+    background-color: gray;
+    color: red;
+}
+
+.class01 {
+    margin: 50px;
+    color: red;
+}
+
+.class02 {
+    margin: 150px;
+    color: green;
 }

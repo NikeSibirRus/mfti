@@ -1,20 +1,19 @@
-.custom {
-    color:#007bff;
-    background-color: #FFA500;
-    font-size:20px;
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100; /* Behind the navbar */
+  padding: 48px 0 0; /* Height of navbar */
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
 }
 
-.body {
-    background-color: gray;
-    color: red;
-}
-
-.class01 {
-    margin: 50px;
-    color: red;
-}
-
-.class02 {
-    margin: 150px;
-    color: green;
+.sidebar-sticky {
+  position: relative;
+  top: 0;
+  height: calc(100vh - 48px);
+  padding-top: .5rem;
+  overflow-x: hidden;
+  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
 }

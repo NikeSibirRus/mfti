@@ -1,13 +1,68 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'main/css/stylesheet.css'%}" type="text/css">
+    <script src="https://kit.fontawesome.com/a97047fead.js" crossorigin="anonymous"></script>
     <title>Работа с шаблонами</title>
 </head>
 <body>
-    <h1>Первая ДЗ - Работа с шаблонами</h1>>
-    <div><a href = "about/"> О нас </a></div>
-    <div><a href = "contacts/"> Контакты </a></div>
-    <div><a href = "content/"> Статья </a></div>
+
+<div class="container-fluid">
+  <div class="row">
+
+    <nav class="col-sm-3 col-md-3 col-lg-3 sidebar">
+      <div class="sidebar-sticky">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+
+            <a class="nav-link active" href="#">
+              <span data-feather="home"></span>
+             <i class="fa-solid fa-house">  Домой</i>
+                <span class="sr-only">(current)</span>
+            </a>
+
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href = "content/">
+              <span data-feather="file"></span>
+              <i class="fa-solid fa-earth-americas">  Новости</i>
+
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href = "contacts/">
+              <span data-feather="shopping-cart"></span>
+                <i class="fa-solid fa-id-badge">  Мой профиль</i>
+
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="users"></span>
+                <i class="fa-solid fa-registered">  Регистрация</i>
+
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href = "about/">
+              <span data-feather="bar-chart-2"></span>
+                <i class="fa-solid fa-person-through-window">  Вход в аккаунт</i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+        <div class="col-sm-9 col-md-9 col-lg-9">
+        <h1>Содержание</h1>
+        <br>
+        <p>"Ваши тропы - у вас под ногами. Каждый увидит свою в должное время"</p>
+        <p>По форме Солнце близко к идеальной сфере с диаметром 1392000 км. Оно вмещает в себя орбиту Луны, и еще остается много места. Фактически более миллиона таких планет как Земля свободно поместились бы внутри Солнца. Кроме того, если бы вы смогли вести машину по его поверхности со скоростью 88 км/ч, у вас бы ушло 5 с половиной лет, чтобы объехать Солнце один раз (притом не останавливаясь). Но размер Солнца не постоянен. Современные исследования показывают, что диаметр Солнца уменьшается приблизительно на 1 метр в час. Если этот феномен проходил и в прошлом столетии, тогда Солнце, которое мы видим сейчас на 800 км меньше, чем то, которое видели наши предки. Возможно, это солнечное сжатие является частью долговременного колебания, которое помогает стабилизировать громадный выброс энергии.</p>
+        </div>
+  </div>
+</div>
 </body>
 </html>

@@ -1,37 +1,45 @@
 <!DOCTYPE html>
 {% load static %}
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Текст + картинка01</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'main/css/stylesheet.css'%}" type="text/css">
+    <script src="https://kit.fontawesome.com/a97047fead.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="container custom">
-        <img src="{% static 'main/img/htmlsun.jpg' %}"  align="left" width="140" height="124" alt="photoSAN" style="margin: 10px 15px 20px 7px" />
-        <big>Солнце</big>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-3 col-md-3 col-lg-3" style="background-color:#7700FF">
+        <h4>Боковое меню сайта</h4>
+        <div class="row">
+            <div class="col-md-3" style="background-color: white;">
+                <ul>
+                  <li><i class="fa-solid fa-user"></i> </li>
+                  <li><i class="fa-regular fa-user"></i> </li>
+                  <li><i class="fa-solid fa-music fa-fade"></i></li>
+                  <li><i class="fa-solid fa-trash"></i> </li>
+                  <li><i class="fa-solid fa-filter fa-shake"></i> </li>
+                </ul>
+            </div>
+            <div class="col-md-9">
+                <h1>Название</h1>
+            </div>
+
+        </div>
+    </div>
+    <div class="col-sm-9 col-md-9 col-lg-9">
+        <h1>Содержание</h1>
         <br>
+        <p>"Ваши тропы - у вас под ногами. Каждый увидит свою в должное время"</p>
         <p>По форме Солнце близко к идеальной сфере с диаметром 1392000 км. Оно вмещает в себя орбиту Луны, и еще остается много места. Фактически более миллиона таких планет как Земля свободно поместились бы внутри Солнца. Кроме того, если бы вы смогли вести машину по его поверхности со скоростью 88 км/ч, у вас бы ушло 5 с половиной лет, чтобы объехать Солнце один раз (притом не останавливаясь). Но размер Солнца не постоянен. Современные исследования показывают, что диаметр Солнца уменьшается приблизительно на 1 метр в час. Если этот феномен проходил и в прошлом столетии, тогда Солнце, которое мы видим сейчас на 800 км меньше, чем то, которое видели наши предки. Возможно, это солнечное сжатие является частью долговременного колебания, которое помогает стабилизировать громадный выброс энергии.</p>
-        <br><br>
+        <img src="{% static 'main/img/htmlsun.jpg' %}"  align="left" width="140" height="124" alt="photoSAN" style="margin: 10px 15px 20px 7px" />
     </div>
-
-    <div class="container class01">
-        <br>
-        <h2> Новость </h2>
-        <p> Текст новости</p>
-        <a>Работа с шаблонами</a>
-        <br>
-    </div>
-
-    <div class="container class02">
-        <br>
-        <h2> Новость2 </h2>
-        <p> Текст новости2</p>
-        <a>Работа с шаблонами2</a>
-        <br>
-    </div>
-
+  </div>
+</div>
 
 </body>
 </html>
